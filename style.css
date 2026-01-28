@@ -1277,4 +1277,113 @@ footer {
     margin: 10px auto 0;
     border-radius: 2px;
 }
+/* --- SECTION FUTURISTE (DESIGN CRÉATIF) --- */
 
+
+/* --- SECTION FUTURISTE SUR FOND BLANC --- */
+
+.future-section-white {
+    padding: 100px 20px;
+    background: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title-gradient {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #00ccff, #bf00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1));
+}
+
+.future-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.future-card-white {
+    position: relative;
+    width: 260px;
+    padding: 40px 30px;
+    background: #fff;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    /* Ombre de base très légère */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Bordure colorée animée au survol */
+.future-card-white::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 5px;
+    background: var(--clr);
+    transition: 0.4s;
+}
+
+.future-card-white:hover {
+    transform: translateY(-15px);
+    /* L'ombre prend la couleur du thème au survol (Effet Waw) */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 0 20px var(--clr);
+    border-color: var(--clr);
+}
+
+.future-card-white .icon {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.future-card-white:hover .icon {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.future-card-white h3 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.future-card-white p {
+    color: #777;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.status-badge {
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--clr);
+    box-shadow: 0 5px 15px var(--clr);
+    opacity: 0.8;
+}
+
+/* Animation flottante douce */
+@keyframes floatSoft {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
+
+.future-card-white:nth-child(even) {
+    animation: floatSoft 4s infinite ease-in-out;
+}
