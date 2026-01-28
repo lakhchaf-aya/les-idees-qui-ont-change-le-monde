@@ -10,46 +10,7 @@
     --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
     --shadow-md: 0 4px 16px rgba(0,0,0,0.12);
     --shadow-lg: 0 8px 24px rgba(0,0,0,0.15);
-    --gold: #FFD700;
 }
-
-/* --- ANIMATIONS GLOBALES --- */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
-}
-
-@keyframes slideInRight {
-    from { opacity: 0; transform: translateX(-30px); }
-    to { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes pulse {
-    0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4); }
-    70% { box-shadow: 0 0 0 10px rgba(245, 158, 11, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
-}
-
-/* Classes utilitaires pour animation */
-.fade-in-section {
-    animation: fadeIn 1s ease-out;
-}
-
-.slide-in-right {
-    animation: slideInRight 0.8s ease-out;
-}
-
-.pulse-anim {
-    animation: pulse 2s infinite;
-}
-
-/* --- BASE STYLES --- */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { 
@@ -61,12 +22,15 @@ body {
 html { scroll-behavior: smooth; }
 
 header {
+   
      background: linear-gradient(
-      135deg,
-      #a9d8e6 5%,
-      #5a1f2e 100%,
-      #754250 0%
-    );
+  135deg,
+  #a9d8e6 5%,
+  #5a1f2e 100%,
+  #754250 0%
+);
+
+    
     color: var(--white);
     padding: 0;
     position: relative;
@@ -77,11 +41,14 @@ header {
 
 .header-top {
     background: linear-gradient(
-      135deg,
-      #a9d8e6 5%,
-      #5a1f2e 100%,
-      #754250 0%
-    );
+  135deg,
+  #a9d8e6 5%,
+  #5a1f2e 100%,
+  #754250 0%
+);
+
+
+
     padding: 80px 20px 100px;
     position: relative;
 }
@@ -112,14 +79,14 @@ header {
 }
 
 .profile-pic {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 5px solid var(--gold);
-    box-shadow: 0 20px 60px rgba(15, 15, 14, 0.3), 0 0 0 10px rgba(66, 66, 66, 0.1);
-    object-fit: cover;
-    animation: float 6s ease-in-out infinite;
-}
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid var(--gold);
+            box-shadow: 0 20px 60px rgba(15, 15, 14, 0.3), 0 0 0 10px rgba(66, 66, 66, 0.1);
+            object-fit: cover;
+            animation: float 6s ease-in-out infinite;
+        }
 
 .header-text {
     flex: 1;
@@ -172,11 +139,6 @@ header p {
     color: var(--text-dark);
     border: 1px solid var(--border-light);
     z-index: 10;
-    transition: transform 0.3s ease;
-}
-
-.qr-container:hover {
-    transform: scale(1.05);
 }
 
 .qr-container img { width: 80px; display: block; margin-bottom: 5px; }
@@ -228,45 +190,40 @@ nav a:hover {
     background-color: rgba(62, 146, 204, 0.05);
 }
 
-/* Couleurs spécifiques Navigation */
 nav a[href="#science"]:hover,
-nav a[href="#science"]:active {
+nav a[href="#science"]:active,
+nav a[href="#science"].active {
     color: #0369a1;
     background-color: rgba(6, 182, 212, 0.08);
     border-bottom-color: #06b6d4;
 }
 
 nav a[href="#philosophie"]:hover,
-nav a[href="#philosophie"]:active {
+nav a[href="#philosophie"]:active,
+nav a[href="#philosophie"].active {
     color: #6b21a8;
     background-color: rgba(168, 85, 247, 0.08);
     border-bottom-color: #a855f7;
 }
 
 nav a[href="#technologie"]:hover,
-nav a[href="#technologie"]:active {
+nav a[href="#technologie"]:active,
+nav a[href="#technologie"].active {
     color: #15803d;
     background-color: rgba(34, 197, 94, 0.08);
     border-bottom-color: #22c55e;
 }
 
 nav a[href="#energie"]:hover,
-nav a[href="#energie"]:active {
+nav a[href="#energie"]:active,
+nav a[href="#energie"].active {
     color: #065f46;
     background-color: rgba(67, 252, 132, 0.045);
     border-bottom-color: #065f46;
 }
-
-/* Nouvelle couleur pour Chronologie (Rose/Magenta) */
-nav a[href="#chronologie"]:hover,
-nav a[href="#chronologie"]:active {
-    color: #be185d;
-    background-color: rgba(219, 39, 119, 0.08);
-    border-bottom-color: #db2777;
-}
-
 nav a[href="#impact"]:hover,
-nav a[href="#impact"]:active {
+nav a[href="#impact"]:active,
+nav a[href="#impact"].active {
     color: #c2410c;
     background-color: rgba(249, 115, 22, 0.08);
     border-bottom-color: #f97316;
@@ -304,34 +261,40 @@ section:last-child {
     border-radius: 0 4px 4px 0;
 }
 
-/* --- SECTIONS SPÉCIFIQUES --- */
-
 #science {
     background: linear-gradient(to bottom, #f0f9ff 0%, #ffffff 100%);
 }
+
 #science .section-title {
     color: #0369a1;
     border-left-color: #06b6d4;
     background: linear-gradient(to right, rgba(6, 182, 212, 0.1) 0%, transparent 100%);
 }
+
 #science .card {
     border-top-color: #06b6d4;
     background: linear-gradient(to bottom, #ffffff 0%, #f0f9ff 100%);
 }
+
 #science .card:hover {
     border-top-color: #0891b2;
     box-shadow: 0 6px 20px rgba(6, 182, 212, 0.15);
 }
-#science .card h3 { color: #0369a1; }
+
+#science .card h3 {
+    color: #0369a1;
+}
 
 #philosophie {
     background: linear-gradient(to bottom, #faf5ff 0%, #ffffff 100%);
 }
+
 #philosophie .section-title {
     color: #6b21a8;
     border-left-color: #a855f7;
     background: linear-gradient(to right, rgba(168, 85, 247, 0.1) 0%, transparent 100%);
 }
+
 #philosophie article h3 {
     color: #6b21a8;
     border-bottom-color: rgba(168, 85, 247, 0.3);
@@ -340,199 +303,72 @@ section:last-child {
 #technologie {
     background: linear-gradient(to bottom, #f0fdf4 0%, #ffffff 100%);
 }
+
 #technologie .section-title {
     color: #15803d;
     border-left-color: #22c55e;
     background: linear-gradient(to right, rgba(34, 197, 94, 0.1) 0%, transparent 100%);
 }
+
 #technologie .card {
     border-top-color: #22c55e;
     background: linear-gradient(to bottom, #ffffff 0%, #f0fdf4 100%);
 }
+
 #technologie .card:hover {
     border-top-color: #16a34a;
     box-shadow: 0 6px 20px rgba(34, 197, 94, 0.15);
 }
-#technologie .card h3 { color: #15803d; }
+
+#technologie .card h3 {
+    color: #15803d;
+}
+
+
 
 #energie {
     background: linear-gradient(to bottom, #ecfeff 0%, #ffffff 100%);
 }
+
 #energie .section-title {
     color: #065f46;
     border-left-color: #10b981;
-    background: linear-gradient(to right, rgba(16, 185, 129, 0.12) 0%, transparent 100%);
+    background: linear-gradient(
+        to right,
+        rgba(16, 185, 129, 0.12) 0%,
+        transparent 100%
+    );
 }
+
 .energie-card {
     border-top-color: #10b981;
     background: linear-gradient(to bottom, #ffffff 0%, #ecfeff 100%);
 }
+
 .energie-card:hover {
     border-top-color: #059669;
     box-shadow: 0 6px 20px rgba(16, 185, 129, 0.2);
 }
-#energie .card h3 { color: #065f46; }
 
-/* --- STYLE CHRONOLOGIE (Nouveau) --- */
-#chronologie {
-    background: linear-gradient(to bottom, #fdf2f8 0%, #ffffff 100%);
+#energie .card h3 {
+    color: #065f46;
 }
 
-#chronologie .section-title {
-    color: #be185d;
-    border-left-color: #db2777;
-    background: linear-gradient(to right, rgba(219, 39, 119, 0.1) 0%, transparent 100%);
-}
-
-.timeline {
-    position: relative;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px 0;
-}
-
-/* La ligne verticale */
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 4px;
-    background-color: #e5e7eb;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -2px;
-    border-radius: 2px;
-}
-
-.timeline-item {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-    box-sizing: border-box;
-    animation: fadeIn 0.6s ease-out; /* Animation à l'apparition */
-    transition: transform 0.3s ease;
-}
-
-.timeline-item:hover {
-    transform: scale(1.02);
-    z-index: 5;
-}
-
-/* Cercles sur la ligne */
-.timeline-item::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    right: -10px;
-    background-color: #white;
-    border: 4px solid #db2777;
-    top: 25px;
-    border-radius: 50%;
-    z-index: 1;
-    background: white;
-    box-shadow: 0 0 0 3px rgba(219, 39, 119, 0.2);
-    transition: all 0.3s ease;
-}
-
-.timeline-item:hover::after {
-    background-color: #db2777;
-    box-shadow: 0 0 0 6px rgba(219, 39, 119, 0.3);
-}
-
-.left { left: 0; }
-.right { left: 50%; }
-
-.left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 28px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-}
-
-.right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 28px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-}
-
-.right::after { left: -10px; }
-
-.timeline-content {
-    padding: 25px;
-    background-color: white;
-    position: relative;
-    border-radius: 6px;
-    box-shadow: var(--shadow-sm);
-    border-top: 3px solid #db2777;
-}
-
-.timeline-content .date {
-    display: inline-block;
-    background: rgba(219, 39, 119, 0.1);
-    color: #be185d;
-    padding: 4px 10px;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 0.85rem;
-    margin-bottom: 10px;
-}
-
-.timeline-content h3 {
-    margin: 0 0 10px 0;
-    color: #831843;
-    font-size: 1.2rem;
-}
-
-.timeline-content p {
-    margin: 0;
-    font-size: 0.95rem;
-    color: var(--text-light);
-}
-
-/* Responsive Chronologie */
-@media screen and (max-width: 768px) {
-    .timeline::after { left: 31px; }
-    .timeline-item { width: 100%; padding-left: 70px; padding-right: 25px; }
-    .timeline-item::after { left: 21px; }
-    .left::after, .right::after { left: 21px; }
-    .right { left: 0%; }
-    
-    .left::before, .right::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-    }
-}
-
-/* --- FIN STYLE CHRONOLOGIE --- */
 
 #impact {
     background: linear-gradient(to bottom, #fff7ed 0%, #ffffff 100%);
 }
+
 #impact .section-title {
     color: #c2410c;
     border-left-color: #f97316;
     background: linear-gradient(to right, rgba(249, 115, 22, 0.1) 0%, transparent 100%);
 }
+
 #impact th {
     background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
 }
+
 #impact tbody tr:hover {
     background-color: rgba(249, 115, 22, 0.05);
 }
@@ -554,13 +390,11 @@ section:last-child {
     border-bottom: 1px solid var(--border-light);
     border-left: 1px solid var(--border-light);
     transition: all 0.3s ease;
-    /* Animation ajoutée */
-    animation: fadeIn 0.8s ease-out;
 }
 
 .card:hover {
     box-shadow: var(--shadow-md);
-    transform: translateY(-5px); /* Un peu plus prononcé */
+    transform: translateY(-3px);
     border-top-color: var(--accent-color);
 }
 
@@ -574,14 +408,6 @@ section:last-child {
 .card p {
     color: var(--text-light);
     line-height: 1.7;
-}
-
-/* Styles pour card-simple (section philosophie) */
-.card-simple {
-    transition: transform 0.3s ease;
-}
-.card-simple:hover {
-    transform: translateX(10px);
 }
 
 article h3 {
@@ -604,10 +430,6 @@ article p {
     border: 1px solid var(--border-light);
     border-radius: 4px;
     box-shadow: var(--shadow-sm);
-    transition: transform 0.3s ease;
-}
-.table-container:hover {
-    transform: scale(1.01);
 }
 
 table { 
@@ -712,3 +534,4 @@ tbody tr:last-child td {
     color: var(--white);
     transform: translateY(-2px);
 }
+
