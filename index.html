@@ -3,64 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les Idées qui ont changé le monde</title>
+    <title>les Idées qui ont changé le monde</title>
     <link rel="stylesheet" href="style.css">
     <style>
         footer {
-            background: #1a1a1a;
-            color: #b0b0b0;
-            text-align: center;
-            padding: 60px 30px;
-            border-top: 4px solid var(--accent-color);
-        }
+    background: #1a1a1a;
+    color: #b0b0b0;
+    text-align: center;
+    padding: 60px 30px;
+    border-top: 4px solid var(--accent-color);
+}
 
-        .copyright {
-            color: var(--accent-color);
-            font-size: 1rem;
-            margin-bottom: 30px;
-            font-family: 'Arial', sans-serif;
-            letter-spacing: 0.5px;
-        }
+.copyright {
+    color: var(--accent-color);
+    font-size: 1rem;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 0.5px;
+}
 
-        .copyright strong {
-            color: var(--white);
-        }
+.copyright strong {
+    color: var(--white);
+}
 
-        pre {
-            color: #666;
-            font-size: 0.7rem;
-            overflow-x: auto;
-            opacity: 0.7;
-        }
+pre {
+    color: #666;
+    font-size: 0.7rem;
+    overflow-x: auto;
+    opacity: 0.7;
+}
 
-        @media (max-width: 768px) {
-            header h1 { font-size: 2rem; }
-            .header-content { 
-                flex-direction: column; 
-                text-align: center;
-                gap: 30px;
-            }
-            .header-text { text-align: center; }
-            section { padding: 40px 25px; }
-            nav ul { flex-direction: column; }
-            nav a { padding: 15px; border-bottom: 1px solid var(--border-light); }
-            
-            /* Mise à jour responsive du menu pour inclure la chronologie */
-            nav a[href="#science"]:hover { border-left: 4px solid #06b6d4; }
-            nav a[href="#philosophie"]:hover { border-left: 4px solid #a855f7; }
-            nav a[href="#technologie"]:hover { border-left: 4px solid #22c55e; }
-            nav a[href="#energie"]:hover { border-left: 4px solid #10b981; }
-            nav a[href="#chronologie"]:hover { border-left: 4px solid #db2777; }
-            nav a[href="#impact"]:hover { border-left: 4px solid #f97316; }
-            
-            .grid-container { grid-template-columns: 1fr; }
-            .qr-container { 
-                top: 15px;
-                right: 15px;
-                padding: 10px;
-            }
-            .qr-container img { width: 60px; }
-        }
+@media (max-width: 768px) {
+    header h1 { font-size: 2rem; }
+    .header-content { 
+        flex-direction: column; 
+        text-align: center;
+        gap: 30px;
+    }
+    .header-text { text-align: center; }
+    section { padding: 40px 25px; }
+    nav ul { flex-direction: column; }
+    nav a { padding: 15px; border-bottom: 1px solid var(--border-light); }
+    nav a[href="#science"]:hover { border-left: 4px solid #06b6d4; }
+    nav a[href="#philosophie"]:hover { border-left: 4px solid #a855f7; }
+    nav a[href="#technologie"]:hover { border-left: 4px solid #22c55e; }
+    nav a[href="#impact"]:hover { border-left: 4px solid #f97316; }
+    .grid-container { grid-template-columns: 1fr; }
+    .qr-container { 
+        top: 15px;
+        right: 15px;
+        padding: 10px;
+    }
+    .qr-container img { width: 60px; }
+}
     </style>
 </head>
 <body id="top">
@@ -74,7 +69,7 @@
         <div class="header-top">
             <div class="header-content">
                 <img src="aya.jpeg" alt="Ma Photo" class="profile-pic">
-                <div class="header-text slide-in-right">
+                <div class="header-text">
                     <h1>Les Idées qui ont Changé le Monde</h1>
                     <p>Une exploration des révolutions de l'esprit humain</p>
                 </div>
@@ -88,13 +83,13 @@
             <li><a href="#science">Science</a></li>
             <li><a href="#philosophie">Philosophie</a></li>
             <li><a href="#technologie">Technologie</a></li>
-            <li><a href="#energie">Énergie</a></li>
-            <li><a href="#chronologie">Chronologie</a></li> <li><a href="#impact">Impact</a></li>
+            <li><a href="#energie">Énergie </a></li>
+            <li><a href="#impact">Impact</a></li>
         </ul>
     </nav>
 
     <main>
-        <section id="science" class="fade-in-section">
+        <section id="science">
             <h2 class="section-title">Révolutions Scientifiques</h2>
             <p style="margin-bottom: 30px; color: var(--text-light);">
                 L'histoire de la science est jalonnée de découvertes qui ont radicalement transformé notre compréhension de l'univers et de la vie elle-même.
@@ -114,44 +109,44 @@
                 </article>
                 <article class="card">
                     <h3>L'Héliocentrisme (Nicolas Copernic)</h3>
-                    <p>Avant le XVIe siècle, on pensait que la Terre était le centre de l'univers. Copernic a bouleversé cette vision en démontrant que la Terre tourne autour du Soleil. Cette idée a non seulement lancé la révolution scientifique, mais elle a aussi changé la place de l'homme dans le cosmos.</p>
+                    <p>Avant le XVIe siècle, on pensait que la Terre était le centre de l'univers. Copernic a bouleversé cette vision en démontrant que la Terre tourne autour du Soleil. Cette idée a non seulement lancé la révolution scientifique, mais elle a aussi changé la place de l'homme dans le cosmos, nous apprenant que nous ne sommes pas au centre de tout.</p>
                 </article>
                 <article class="card">
                     <h3>La Théorie de l'Évolution (Charles Darwin)</h3>
-                    <p>En publiant De l'origine des espèces en 1859, Darwin a introduit l'idée de la sélection naturelle. Il a prouvé que les espèces ne sont pas immuables, mais qu'elles évoluent sur des millions d'années pour s'adapter à leur environnement.</p>
+                    <p>En publiant De l'origine des espèces en 1859, Darwin a introduit l'idée de la sélection naturelle. Il a prouvé que les espèces ne sont pas immuables, mais qu'elles évoluent sur des millions d'années pour s'adapter à leur environnement. C'est le fondement de toute la biologie moderne.</p>
                 </article>
                 <article class="card">
                     <h3>La Théorie des Germes (Louis Pasteur)</h3>
-                    <p>Avant Pasteur, on pensait que les maladies apparaissaient par "génération spontanée". En prouvant que des micro-organismes invisibles sont responsables des maladies, il a permis l'invention des vaccins et des règles d'hygiène modernes.</p>
+                    <p>Avant Pasteur, on pensait que les maladies apparaissaient par "génération spontanée" ou à cause de "mauvais airs". En prouvant que des micro-organismes invisibles (bactéries, virus) sont responsables des maladies, il a permis l'invention des vaccins, de la pasteurisation et des règles d'hygiène modernes, doublant ainsi l'espérance de vie humaine.</p>
                 </article>
             </div>
         </section>
 
-        <section id="philosophie" class="alt-bg fade-in-section">
+        <section id="philosophie" class="alt-bg">
             <h2 class="section-title">Lumières de la Pensée</h2>
-            <article class="card-simple">
+            <article>
                 <h3>Le Principe Démocratique</h3>
-                <p>La démocratie repose sur l'idée que le pouvoir légitime émane du peuple. Les philosophes des Lumières comme Rousseau et Montesquieu ont jeté les fondements théoriques des systèmes démocratiques modernes.</p>
+                <p>La démocratie repose sur l'idée que le pouvoir légitime émane du peuple. Les philosophes des Lumières comme Rousseau, avec son contrat social, et Montesquieu, avec la séparation des pouvoirs, ont jeté les fondements théoriques des systèmes démocratiques modernes. Cette révolution conceptuelle affirme l'égalité fondamentale entre les citoyens.</p>
             </article>
-            <article class="card-simple" style="margin-top: 40px;">
+            <article style="margin-top: 40px;">
                 <h3>Les Droits Universels de l'Homme</h3>
-                <p>L'émergence de la notion de droits inaliénables représente un tournant majeur. Ces droits, indépendants de l'origine ou du statut social, constituent le socle des démocraties contemporaines.</p>
+                <p>L'émergence de la notion de droits inaliénables représente un tournant majeur dans l'histoire de la pensée. Ces droits, indépendants de l'origine, du statut social ou de la religion, constituent le socle des démocraties contemporaines et inspirent les chartes internationales depuis la Déclaration de 1789.</p>
             </article>
-            <article class="card-simple" style="margin-top: 40px;">
+            <article style="margin-top: 40px;">
                 <h3>La Tolérance et la Liberté de Conscience</h3>
-                <p>Portée par des penseurs comme Voltaire, cette idée soutient que personne ne doit être inquiété pour ses opinions. Elle a permis de pacifier les sociétés plurielles et de protéger la sphère privée.</p>
+                <p>La reconnaissance de la liberté de conscience a radicalement transformé le rapport à l'autorité religieuse et morale au sein de la société. Portée par des penseurs comme Voltaire, cette idée soutient que personne ne doit être inquiété pour ses opinions, dès lors que leur manifestation ne trouble pas l'ordre public. En instaurant la tolérance comme vertu civile, cette pensée a permis de pacifier les sociétés plurielles et de protéger la sphère privée de toute ingérence arbitraire du pouvoir.</p>
             </article>
-            <article class="card-simple" style="margin-top: 40px;">
-                <h3>Le Règne de la Raison</h3>
-                <p>L'idée que la raison humaine constitue l'outil suprême pour comprendre le monde a marqué la fin de l'obscurantisme, plaçant le savoir au service de l'émancipation collective.</p>
+            <article style="margin-top: 40px;">
+                <h3>Le Règne de la Raison et du Progrès</h3>
+                <p>L'idée que la raison humaine constitue l'outil suprême pour comprendre et transformer le monde a marqué la fin de l'obscurantisme. Cette foi dans le progrès suggère que l'acquisition des connaissances, la démarche scientifique et l'éducation permettent d'améliorer constamment la condition humaine. En cherchant à éclairer les esprits, ce mouvement a favorisé l'esprit critique et l'innovation, plaçant le savoir au service de l'émancipation collective et du bien commun.</p>
             </article>
-            <article class="card-simple" style="margin-top: 40px;">
-                <h3>L'État de Droit</h3>
-                <p>L'établissement de l'État de droit garantit que l'exercice du pouvoir est strictement encadré par des règles juridiques. Nul n'est au-dessus de la loi, pas même les gouvernants.</p>
+            <article style="margin-top: 40px;">
+                <h3>L'État de Droit et la Justice</h3>
+                <p>L'établissement de l'État de droit garantit que l'exercice du pouvoir est strictement encadré par des règles juridiques connues de tous. Cette idée fondamentale assure que nul n'est au-dessus de la loi, pas même les gouvernants, protégeant ainsi les citoyens contre l'arbitraire et les abus de pouvoir. À travers des institutions judiciaires indépendantes, elle assure l'équité et la sécurité juridique, conditions indispensables à la paix sociale et à l'exercice effectif de la liberté.</p>
             </article>
         </section>
 
-        <section id="technologie" class="fade-in-section">
+        <section id="technologie">
             <h2 class="section-title">Innovations Technologiques</h2>
             <p style="margin-bottom: 30px; color: var(--text-light);">
                 Les avancées technologiques ont profondément reconfiguré nos modes de vie, de travail et de communication.
@@ -159,207 +154,105 @@
             <div class="grid-container">
                 <article class="card">
                     <h3>Le Réseau Internet</h3>
-                    <p>Né des recherches militaires, Internet est devenu un espace public mondial connectant des milliards d'individus. Il démocratise l'accès au savoir et transforme radicalement les échanges.</p>
+                    <p>Né des recherches militaires, Internet est devenu un espace public mondial connectant des milliards d'individus. Il démocratise l'accès au savoir et transforme radicalement les échanges économiques, culturels et sociaux.</p>
                 </article>
                 <article class="card">
                     <h3>L'Intelligence Artificielle</h3>
-                    <p>Les systèmes d'apprentissage automatique permettent désormais aux machines d'analyser des données complexes et de résoudre des problèmes qui semblaient réservés à l'intelligence humaine.</p>
+                    <p>Les systèmes d'apprentissage automatique permettent désormais aux machines d'analyser des données complexes, de reconnaître des schémas et de résoudre des problèmes qui semblaient réservés à l'intelligence humaine.</p>
                 </article>
                 <article class="card">
                     <h3>L'Édition Génomique</h3>
-                    <p>Les technologies comme CRISPR-Cas9 offrent la possibilité de modifier précisément le génome, ouvrant des perspectives thérapeutiques révolutionnaires.</p>
+                    <p>Les technologies comme CRISPR-Cas9 offrent la possibilité de modifier précisément le génome. Cette capacité ouvre des perspectives thérapeutiques révolutionnaires tout en soulevant des questions éthiques fondamentales.</p>
                 </article>
                 <article class="card">
                     <h3>Le Smartphone</h3>
-                    <p>En combinant un téléphone, un ordinateur, un appareil photo et un GPS dans un seul boîtier de poche, le smartphone a révolutionné notre rapport à l'immédiateté et à l'information.</p>
+                    <p>Si l'Internet a connecté les ordinateurs, le smartphone a connecté les individus en permanence. En combinant un téléphone, un ordinateur, un appareil photo et un GPS dans un seul boîtier de poche, il a créé l'économie des applications. Il a révolutionné notre rapport à l'immédiateté, au commerce et à l'information géographique.</p>
                 </article>
                 <article class="card">
                     <h3>L'Énergie Photovoltaïque</h3>
-                    <p>Le développement de cellules capables de convertir la lumière du soleil en électricité a amorcé une révolution énergétique mondiale, offrant une alternative durable aux fossiles.</p>
+                    <p>Le développement de cellules capables de convertir directement la lumière du soleil en électricité a amorcé une révolution énergétique mondiale. Cette technologie permet une décentralisation de l'énergie, offrant une alternative durable aux combustibles fossiles et permettant l'électrification de zones rurales isolées sans passer par un réseau physique complexe.</p>
                 </article>
                 <article class="card">
                     <h3>La Blockchain</h3>
-                    <p>Système de registre décentralisé et infalsifiable, la Blockchain garantit la confiance dans les transactions numériques sans tiers central, redéfinissant la notion de propriété numérique.</p>
+                    <p>Souvent associée uniquement aux cryptomonnaies, la technologie Blockchain est avant tout un système de registre décentralisé et infalsifiable. Elle permet de garantir la confiance et la transparence dans les transactions numériques sans avoir besoin d'un tiers central (comme une banque ou un gouvernement), ouvrant la voie à une nouvelle gestion de l'identité numérique et de la propriété.</p>
                 </article>
             </div>
         </section>
 
-        <section id="energie" class="alt-bg fade-in-section">
-            <h2 class="section-title">Énergie & Environnement</h2>
-            <p style="margin-bottom: 30px; color: var(--text-light);">
-                Les idées liées à l’énergie et à la protection de l’environnement ont profondément transformé notre rapport à la planète.
-            </p>
-            <div class="grid-container">
-                <article class="card energie-card">
-                    <h3>L’Énergie Solaire</h3>
-                    <p>L’énergie solaire repose sur l’exploitation de la lumière du Soleil pour produire de l’électricité propre et inépuisable grâce aux panneaux photovoltaïques.</p>
-                </article>
-                <article class="card energie-card">
-                    <h3>L’Énergie Éolienne</h3>
-                    <p>L’énergie éolienne utilise la force du vent pour produire de l’électricité sans émissions de gaz à effet de serre.</p>
-                </article>
-                <article class="card energie-card">
-                    <h3>Le Développement Durable</h3>
-                    <p>Satisfaire les besoins présents sans compromettre ceux des générations futures, en équilibrant économie, social et environnement.</p>
-                </article>
-                <article class="card energie-card">
-                    <h3>Le Recyclage</h3>
-                    <p>Transformer les déchets en nouvelles ressources pour réduire la pollution et préserver les matières premières naturelles.</p>
-                </article>
-                <article class="card energie-card">
-                    <h3>La Biodiversité</h3>
-                    <p>Préserver les espèces et leurs écosystèmes est essentiel pour maintenir l’équilibre naturel et garantir la sécurité alimentaire.</p>
-                </article>
-                <article class="card energie-card">
-                    <h3>L’Économie Verte</h3>
-                    <p>Concilier croissance économique et respect de l’environnement en encourageant les énergies propres et les emplois durables.</p>
-                </article>
-            </div>
-        </section>
+        <section id="energie" class="alt-bg">
+    <h2 class="section-title">Énergie & Environnement</h2>
 
-        <section id="chronologie" class="fade-in-section">
-    <h2 class="section-title">Chronologie Complète des Idées</h2>
-    <p style="margin-bottom: 40px; color: var(--text-light); text-align: center;">
-        L'évolution des grandes idées à travers les siècles.
+    <p style="margin-bottom: 30px; color: var(--text-light);">
+        Les idées liées à l’énergie et à la protection de l’environnement ont profondément transformé
+        notre rapport à la planète. Elles cherchent à répondre aux défis climatiques tout en assurant
+        un développement durable pour les générations futures.
     </p>
-    
-    <div class="timeline">
-        <div class="timeline-item left">
-            <div class="timeline-content">
-                <span class="date">1450</span>
-                <h3>L'Imprimerie</h3>
-            </div>
-        </div>
-        <div class="timeline-item right">
-            <div class="timeline-content">
-                <span class="date">1543</span>
-                <h3>L'Héliocentrisme</h3>
-            </div>
-        </div>
-        <div class="timeline-item left">
-            <div class="timeline-content">
-                <span class="date">1687</span>
-                <h3>Gravitation Universelle</h3>
-            </div>
-        </div>
-        <div class="timeline-item right">
-            <div class="timeline-content">
-                <span class="date">1748</span>
-                <h3>Le Principe Démocratique</h3>
-            </div>
-        </div>
-        <div class="timeline-item left">
-            <div class="timeline-content">
-                <span class="date">1763</span>
-                <h3>Tolérance & Liberté</h3>
-            </div>
-        </div>
-        <div class="timeline-item right">
-            <div class="timeline-content">
-                <span class="date">1789</span>
-                <h3>Droits de l'Homme</h3>
-            </div>
-        </div>
-        <div class="timeline-item left">
-            <div class="timeline-content">
-                <span class="date">1796</span>
-                <h3>Les Vaccins</h3>
-            </div>
-        </div>
 
-        <div class="timeline-item right">
-            <div class="timeline-content">
-                <span class="date">1859</span>
-                <h3>Théorie de l'Évolution</h3>
-            </div>
-        </div>
-        <div class="timeline-item left">
-            <div class="timeline-content">
-                <span class="date">1861</span>
-                <h3>Théorie des Germes</h3>
-            </div>
-        </div>
-        <div class="timeline-item right">
-            <div class="timeline-content">
-                <span class="date">1879</span>
-                <h3>L'Ampoule Électrique</h3>
-            </div>
-        </div>
+    <div class="grid-container">
 
-        <div class="timeline-item left">
-            <div class="timeline-content">
-                <span class="date">1905</span>
-                <h3>Théorie de la Relativité</h3>
-            </div>
-        </div>
-        <div class="timeline-item right">
-            <div class="timeline-content">
-                <span class="date">1928</span>
-                <h3>La Pénicilline</h3>
-            </div>
-        </div>
-        <div class="timeline-item left">
-            <div class="timeline-content">
-                <span class="date">1945</span>
-                <h3>Les Ordinateurs</h3>
-            </div>
-        </div>
-        <div class="timeline-item right">
-            <div class="timeline-content">
-                <span class="date">1953</span>
-                <h3>Structure de l'ADN</h3>
-            </div>
-        </div>
-        <div class="timeline-item left">
-            <div class="timeline-content">
-                <span class="date">1954</span>
-                <h3>Énergie Photovoltaïque</h3>
-            </div>
-        </div>
-        <div class="timeline-item right">
-            <div class="timeline-content">
-                <span class="date">1956</span>
-                <h3>Intelligence Artificielle</h3>
-            </div>
-        </div>
-        <div class="timeline-item left">
-            <div class="timeline-content">
-                <span class="date">1969</span>
-                <h3>Le Réseau Internet</h3>
-            </div>
-        </div>
-        <div class="timeline-item right">
-            <div class="timeline-content">
-                <span class="date">1987</span>
-                <h3>Développement Durable</h3>
-            </div>
-        </div>
+        <article class="card energie-card">
+            <h3>L’Énergie Solaire</h3>
+            <p>
+                L’énergie solaire repose sur l’exploitation de la lumière du Soleil pour produire de l’électricité.
+                Grâce aux panneaux photovoltaïques, il est possible de générer une énergie propre, renouvelable
+                et inépuisable. Cette idée a réduit la dépendance aux combustibles fossiles et joué un rôle clé
+                dans la lutte contre le réchauffement climatique.
+            </p>
+        </article>
 
-        <div class="timeline-item left">
-            <div class="timeline-content">
-                <span class="date">2007</span>
-                <h3>Le Smartphone</h3>
-            </div>
-        </div>
-        <div class="timeline-item right">
-            <div class="timeline-content">
-                <span class="date">2008</span>
-                <h3>La Blockchain</h3>
-            </div>
-        </div>
-        <div class="timeline-item left">
-            <div class="timeline-content">
-                <span class="date">2012</span>
-                <h3>Édition Génomique</h3>
-            </div>
-        </div>
+        <article class="card energie-card">
+            <h3>L’Énergie Éolienne</h3>
+            <p>
+                L’énergie éolienne utilise la force du vent pour produire de l’électricité grâce à des éoliennes.
+                Elle permet de produire de l’énergie sans émissions de gaz à effet de serre et contribue à
+                la transition énergétique dans de nombreux pays à travers le monde.
+            </p>
+        </article>
+
+        <article class="card energie-card">
+            <h3>Le Développement Durable</h3>
+            <p>
+                Le développement durable repose sur l’idée de satisfaire les besoins présents sans compromettre
+                ceux des générations futures. Il repose sur trois piliers : l’économie, le social et
+                l’environnement, encourageant une croissance responsable et équilibrée.
+            </p>
+        </article>
+
+        <article class="card energie-card">
+            <h3>Le Recyclage</h3>
+            <p>
+                Le recyclage vise à transformer les déchets en nouvelles ressources. Cette idée permet de réduire
+                la pollution, de préserver les matières premières naturelles et de limiter la quantité de déchets
+                envoyés dans la nature ou dans les décharges.
+            </p>
+        </article>
+
+        <article class="card energie-card">
+            <h3>La Protection de la Biodiversité</h3>
+            <p>
+                Protéger la biodiversité signifie préserver les espèces animales et végétales ainsi que leurs
+                écosystèmes. Cette idée est essentielle pour maintenir l’équilibre naturel, garantir la sécurité
+                alimentaire et protéger la planète contre les dérèglements écologiques.
+            </p>
+        </article>
+
+        <article class="card energie-card">
+            <h3>L’Économie Verte</h3>
+            <p>
+                L’économie verte vise à concilier croissance économique et respect de l’environnement.
+                Elle encourage les énergies propres, la réduction des émissions polluantes et la création
+                d’emplois durables, tout en protégeant les ressources naturelles.
+            </p>
+        </article>
+
     </div>
 </section>
 
-        <section id="impact" class="alt-bg fade-in-section">
-            <h2 class="section-title">Analyse Comparative</h2>
+
+        <section id="impact" class="alt-bg">
+            <h2 class="section-title">Analyse Comparative des Innovations</h2>
             <p style="margin-bottom: 30px; color: var(--text-light);">
-                Chaque innovation majeure présente des bénéfices considérables tout en générant de nouveaux défis.
+                Chaque innovation majeure présente des bénéfices considérables tout en générant de nouveaux défis pour nos sociétés.
             </p>
             <div class="table-container">
                 <table>
@@ -412,9 +305,9 @@
                 </table>
             </div>
 
-            <aside class="info-box pulse-anim">
+            <aside class="info-box">
                 <h3>💡 Le Saviez-vous ?</h3>
-                <p>Chaque grande innovation de l'histoire a d'abord été accueillie avec scepticisme. L'imprimerie fut considérée comme dangereuse, la vaccination combattue, et Internet qualifié de "mode passagère".</p>
+                <p>Chaque grande innovation de l'histoire a d'abord été accueillie avec scepticisme. L'imprimerie fut considérée comme dangereuse par les autorités religieuses, la vaccination fut combattue par de nombreux médecins, et Internet fut qualifié de "mode passagère" par certains experts dans les années 1990.</p>
             </aside>
 
             <div class="action-bar">
