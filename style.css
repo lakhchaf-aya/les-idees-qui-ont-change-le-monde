@@ -505,6 +505,7 @@ section:last-child {
     height: 50px;
     color: white;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+     stroke: #ffcc00;
 }
 
 /* Lignes de connexion */
@@ -1276,3 +1277,4 @@ footer {
     margin: 10px auto 0;
     border-radius: 2px;
 }
+
